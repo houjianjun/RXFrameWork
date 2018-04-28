@@ -9,7 +9,12 @@
 		<!-- 初始化参数 -->
 		<init-param>
 			<param-name>javax.ws.rs.Application</param-name>
-			<param-value>com.xtwy.common.MyApplication</param-value>
+			<param-value>com.xtwy.common.RestApplication</param-value>
+		</init-param>
+		<!-- json数据 -->
+		<init-param>
+			<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+			<param-value>true</param-value>
 		</init-param>
 		<!-- 加载顺序 -->
 		<load-on-startup>1</load-on-startup>
@@ -17,6 +22,6 @@
 	<!-- 映射路径 -->
 	<servlet-mapping>
 		<servlet-name>JerseyWebApplication</servlet-name>
-		<url-pattern>/api/*</url-pattern>
+		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
 </web-app>

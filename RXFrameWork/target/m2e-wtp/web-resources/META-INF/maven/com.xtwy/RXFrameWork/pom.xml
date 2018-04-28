@@ -8,6 +8,12 @@
 	<name>RXFrameWork Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>2.27</version>
+			<scope>provided</scope>
+		</dependency>
 		<!-- Jersey目前提供了JSP和FreeMarker两种模板引擎 -->
 		<dependency>
 			<groupId>org.glassfish.jersey.ext</groupId>
@@ -37,6 +43,28 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+		</dependency>
+		<!-- json -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>1.19.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>2.27</version>
+		</dependency>
+		<!-- 客户端调用 -->
+		<dependency>
+			<groupId>org.glassfish.grizzly</groupId>
+			<artifactId>grizzly-http-servlet</artifactId>
+			<version>2.4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>2.27</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
